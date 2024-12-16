@@ -18,9 +18,11 @@ numberButtons.forEach((number) => {
     if (operVal === "") {
       numVal1 += clickedNumber;
       displayEl.innerText = numVal1;
+      console.log(numVal1);
     } else {
       numVal2 += clickedNumber;
       displayEl.innerText = numVal2;
+      console.log(numVal2);
     }
   });
 });
@@ -36,27 +38,28 @@ operatorButtons.forEach((operator) => {
       displayEl.innerText = operVal;
     }
     if (operVal === "C") {
-      (displayEl.innerText = ""),
-        (numVal1 = ""),
-        (numVal2 = ""),
-        (operVal = ""),
-        displayEl.innerText;
+      displayEl.innerText = "";
+      numVal1 = "";
+      numVal2 = "";
+      operVal = "";
+      console.log("text cleared");
     }
+    console.log(operVal);
   });
 });
 
 equalsButton.addEventListener("click", () => {
   if (operVal === "+") {
-    parseInt(numVal1) + parseInt(numVal2);
+    console.log(parseInt(numVal1) + parseInt(numVal2));
     displayEl.innerText = parseInt(numVal1) + parseInt(numVal2);
   } else if (operVal === "-") {
-    parseInt(numVal1) - parseInt(numVal2);
+    console.log(parseInt(numVal1) - parseInt(numVal2));
     displayEl.innerText = parseInt(numVal1) - parseInt(numVal2);
   } else if (operVal === "*") {
-    parseInt(numVal1) * parseInt(numVal2);
+    console.log(parseInt(numVal1) * parseInt(numVal2));
     displayEl.innerText = parseInt(numVal1) * parseInt(numVal2);
   } else if (operVal === "/") {
-    parseInt(numVal1) / parseInt(numVal2);
+    console.log(parseInt(numVal1) / parseInt(numVal2));
     displayEl.innerText = parseInt(numVal1) / parseInt(numVal2);
   }
 });

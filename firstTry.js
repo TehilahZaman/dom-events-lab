@@ -46,3 +46,12 @@ calculator.addEventListener("click", (event, num1, num2) => {
 
 // clickedButton = event.target.innertText
 // this would allow me to set the if statement for all the string values for the buttons clicked and then had them function
+
+// i did it!!
+
+/*
+notes for adding more details to firnal version
+can i add another number after i press the quals sign and a operator?
+  try : else if (numb2 === "") ...
+change it so that operators won't dispay if there is no number1 selected
+*/
